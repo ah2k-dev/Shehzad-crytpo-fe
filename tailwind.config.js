@@ -4,9 +4,12 @@ import { nextui } from "@nextui-org/react";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{html,js}",
+    "./pages/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
+  prefix: "",
   theme: {
     light: {
       colors: {
@@ -40,18 +43,29 @@ export default {
         spiralBg: "url('/background/spiral.png')",
       },
       colors: {
-        purple: {
-          50: "#FAF8FB",
-          100: "#F4F0F7",
-          200: "#E9E0EE",
-          300: "#D6C6E1",
-          400: "#BEA4CE",
-          500: "#A27FB6",
-          600: "#805D93",
-          700: "#6E4E7D",
-          800: "#5B4167",
-          900: "#4E3956",
-          950: "#2E1D35",
+        blackcurrent: {
+          // 50: "#FAF8FB",
+          // 100: "#F4F0F7",
+          // 200: "#E9E0EE",
+          // 300: "#D6C6E1",
+          // 400: "#BEA4CE",
+          // 500: "#A27FB6",
+          // 600: "#805D93",
+          // 700: "#6E4E7D",
+          // 800: "#5B4167",
+          // 900: "#4E3956",
+          // 950: "#2E1D35",
+        50: '#fff1f1',
+        100: '#ffe0e0',
+        200: '#ffc7c7',
+        300: '#ffa0a0',
+        400: '#ff6969',
+        500: '#f93a3a',
+        600: '#e71b1b',
+        700: '#c71313',
+        800: '#a11313',
+        900: '#851717',
+        950: '#490606',
         },
         orange: {
           50: "#FFF9EB",
