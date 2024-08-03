@@ -44,3 +44,8 @@ export const CategoryMenu = [
     ],
   },
 ];
+
+
+export const categorySlider = [
+  {id:0,name:"computer" , image:"../../assets.electronic.jfif"}
+]

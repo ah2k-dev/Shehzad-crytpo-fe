@@ -5,7 +5,7 @@ import { Input} from "@nextui-org/react";
 import ThemeSwitch from '../common/themeSwitch';
 const TopNavbar = () => {
   return (
-  <div className='bg-blackcurrent-500 flex justify-between  items-center gap-4 p-2 px-10'>
+  <div className='bg-blackcurrent-500 flex justify-between  items-center gap-4 p-2 px-2 md:px-10'>
     <Logo/>
     <div className='bg-white flex justify-center rounded-md  max-w-full w-2/4'>
     <Input
@@ -18,9 +18,9 @@ const TopNavbar = () => {
         />
     </div>
     <div className='flex items-center gap-4 '>
-    <Heart  className='text-white cursor-pointer'/>
-    <ShoppingCart className='text-white cursor-pointer'/>
-    <UserRound  className='text-white cursor-pointer'/>
+    <Heart  className='text-white cursor-pointer hidden md:block'/>
+    <ShoppingCart className='text-white cursor-pointer hidden md:block'/>
+    <UserRound  className='text-white cursor-pointer '/>
     <ThemeSwitch/>
        
     </div>

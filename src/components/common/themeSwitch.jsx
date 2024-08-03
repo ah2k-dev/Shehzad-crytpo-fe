@@ -13,7 +13,7 @@ const ThemeSwitchComp = (props) => {
   } = useSwitch(props);
 
   return (
-    <div className="flex justify-center  border border-solid border-blackcurrent-600 rounded-md">
+    <div className="flex justify-center  border border-solid border-blackcurrent-600 rounded-md hidden md:block">
       <Component {...getBaseProps()}>
           <VisuallyHidden>
             <input {...getInputProps()} />

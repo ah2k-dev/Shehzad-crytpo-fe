@@ -1,3 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.swiper-button-disabled{
+
+    color: #8b8a8a;
+}
+.swiper-button-prev,
+.swiper-button-next{
+
+    color: #f53434;
+}
+.swiper-pagination-bullet-active{
+    background: #f53434;
+}
+
+body::-webkit-scrollbar{
+    background-color: #c4c2c2;
+    width: 8px;
+    /* border-radius: 4px; */
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #f53434;
+    /* border-radius: 4px; */
+}
+
+.scroll-bar::-webkit-scrollbar{
+    background-color: #c4c2c2;
+    width: 8px;
+    border-radius: 4px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb{
+    background-color: #f53434;
+    border-radius: 4px;
+}
