@@ -9,8 +9,8 @@ const TopNavbar = () => {
     <Logo/>
     <div className='bg-white flex justify-center rounded-md  max-w-full w-2/4'>
     <Input
-    className='bg-white rounded-md'
-    placeholder='Search...'
+    className='bg-white rounded-md dark:bg-zinc-950'
+    placeholder='Search Product...'
           type="text"
           endContent={
             <Search  className="bg-blackcurrent-300 rounded-md p-1 text-blackcurrent-700 text-xl text-default-400 pointer-events-none flex-shrink-0" />

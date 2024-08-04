@@ -1,6 +1,7 @@
 import React from "react";
 import {Switch, VisuallyHidden, useSwitch} from "@nextui-org/react";
 import { Moon ,Sun} from 'lucide-react';
+import { themeStore } from "../../stores/themeStore";
 
 const ThemeSwitchComp = (props) => {
   const {
@@ -11,9 +12,9 @@ const ThemeSwitchComp = (props) => {
     getInputProps, 
     getWrapperProps
   } = useSwitch(props);
-
+  const toggleTheme = themeStore((state) => state.toggleTheme)
   return (
-    <div className="flex justify-center  border border-solid border-blackcurrent-600 rounded-md hidden md:block">
+    <div className="flex justify-center  border border-solid border-blackcurrent-600 rounded-md hidden md:block" onClick={toggleTheme}>
       <Component {...getBaseProps()}>
           <VisuallyHidden>
             <input {...getInputProps()} />

@@ -3,11 +3,12 @@ import { nextui } from "@nextui-org/react";
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'selector',
   content: [
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,jsx}",
     "./app/**/*.{js,jsx}",
     "./src/**/*.{js,jsx}",
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {
@@ -147,6 +148,8 @@ export default {
       },
     },
     darkMode: "class",
-    plugins: [nextui()],
+    plugins: [nextui({
+      addCommonColors: true,
+    })],
   },
 };
