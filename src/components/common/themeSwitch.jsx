@@ -14,13 +14,14 @@ const ThemeSwitchComp = (props) => {
   } = useSwitch(props);
   const toggleTheme = themeStore((state) => state.toggleTheme)
   return (
-    <div className="flex justify-center  border border-solid border-blackcurrent-600 rounded-md hidden md:block" onClick={toggleTheme}>
+    <div className="flex justify-center  border border-solid border-blackcurrent-600 rounded-md hidden md:block" >
       <Component {...getBaseProps()}>
           <VisuallyHidden>
             <input {...getInputProps()} />
           </VisuallyHidden>
           <div
             {...getWrapperProps()}
+            onClick={toggleTheme}
             className={slots.wrapper({
               class: [
                 "w-8 h-8 mr-0",
