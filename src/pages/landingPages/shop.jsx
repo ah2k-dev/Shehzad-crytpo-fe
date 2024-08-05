@@ -4,8 +4,8 @@ import Filters from '../../components/shop/filters'
 
 const Shop = () => {
   return (
-    <div className='container grid grid-cols-5 gap-3'>
-    <div className=''>
+    <div className='container grid  md:grid-cols-5 gap-3'>
+    <div className='hidden md:block'>
         <Filters />
         </div>
     <div className='col-span-4'>
