@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Logo from '../common/logo'
 import { Search ,ShoppingCart,Heart,UserRound} from 'lucide-react';
 import { Input} from "@nextui-org/react";
 import ThemeSwitch from '../common/themeSwitch';
+
+
 const TopNavbar = () => {
+  
   return (
   <div className='bg-blackcurrent-500 flex justify-between  items-center gap-4 p-2 px-2 md:px-10'>
     <Logo/>

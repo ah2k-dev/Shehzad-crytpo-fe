@@ -5,9 +5,9 @@ import DashboardNavbar from '../components/layouts/dashboardNavbar'
 
 const DashboardLayout = () => {
   return (
-    <div className='flex gap-2'>
+    <div className='flex gap-2 w-full'>
         <Sidebar/>
-        <div>
+        <div className='w-4/5 px-3'>
 <DashboardNavbar/>
         <Outlet/>
         </div>

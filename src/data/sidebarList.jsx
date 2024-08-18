@@ -1,4 +1,4 @@
-import { LayoutDashboard ,Layers,PackageOpen} from "lucide-react";
+import { LayoutDashboard ,Layers,PackageOpen, CircleHelp, Settings} from "lucide-react";
 
 export const SidebarList = [
   {
@@ -15,5 +15,15 @@ export const SidebarList = [
     name: "Categories",
     link: "/dashboard/categories",
     icon: <Layers  />,
+  },
+  {
+    name: "Faqs",
+    link: "/dashboard/faqs",
+    icon: <CircleHelp   />,
+  },
+  {
+    name: "Setting",
+    link: "/dashboard/setting",
+    icon: <Settings    />,
   },
 ];

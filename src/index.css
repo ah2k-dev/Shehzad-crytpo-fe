@@ -32,3 +32,7 @@ body::-webkit-scrollbar-thumb{
     background-color: #f53434;
     border-radius: 4px;
 }
+
+.text-foreground-500 {
+    color: #9ca3af ;
+}
