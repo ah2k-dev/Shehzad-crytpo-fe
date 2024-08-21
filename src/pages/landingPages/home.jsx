@@ -4,6 +4,10 @@ import React from "react";
 import Heading from "../../components/common/heading";
 import {ExpandableCardDemo} from "../../components/cards/productCard";
 import { MoveRight } from "lucide-react";
+import Faqs from "../../components/home/faq";
+import ShortServices from "../../components/home/shortServices";
+import HowItWork from "../../components/home/howItWork";
+import OusrServices from "../../components/home/ourServercies";
 
 const Home = () => {
   return (
@@ -11,8 +15,9 @@ const Home = () => {
       
       <Banner/>
       <div className=" container">
+        <ShortServices/>
 
-      <Heading title={"Trending Products"}/>
+      {/* <Heading title={"Trending Products"}/>
       <ExpandableCardDemo/>
       <div className="flex justify-center">
         <Button className="bg-blackcurrent-500 text-white hover:bg-blackcurrent-600 px-10 my-5 rounded-md flex items-center">See All <MoveRight className="ms-1" /></Button>
@@ -22,10 +27,11 @@ const Home = () => {
       <ExpandableCardDemo/>
       <div className="flex justify-center">
         <Button className="bg-blackcurrent-500 text-white hover:bg-blackcurrent-600 px-10 my-5 rounded-md flex items-center">See All <MoveRight className="ms-1" /></Button>
+      </div> */}
+      <OusrServices/>
+<HowItWork/>
       </div>
-
-      </div>
-      
+      <Faqs/>
       
     </div>
   );

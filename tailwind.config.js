@@ -42,6 +42,8 @@ export default {
         cardBg: "url('/background/cardBg.png')",
         musicBg: "url('/background/musicBg.png')",
         spiralBg: "url('/background/spiral.png')",
+        faqbg : "url('/src/assets/faqbg.webp')",
+        howwork : "url('/src/assets/bg-texture.jpg')",
       },
       colors: {
         blackcurrent: {

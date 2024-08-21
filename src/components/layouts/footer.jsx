@@ -5,7 +5,7 @@ import { Divider, Input } from '@nextui-org/react';
 
 const Footer = () => {
   return (
-    <div className='bg-blackcurrent-600 p-10 mt-20'>
+    <div className='bg-blackcurrent-600 p-10 '>
         
     <div className='  grid sm:grid-cols-2 lg:grid-cols-4 gap-3 my-5'>
         <div className='flex flex-col gap-3'>

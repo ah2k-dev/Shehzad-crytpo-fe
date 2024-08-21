@@ -1,4 +1,11 @@
-@import url('https://unpkg.com/@nextui-org/react@latest/dist/nextui.css');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Lexend+Deca:wght@100..900&display=swap');
+
+.font-Baskervville{
+    font-family: Baskervville;
+}
+.font-Lexend{
+    font-family: Lexends Deca;
+}
 .swiper-button-disabled{
 
     color: #8b8a8a;

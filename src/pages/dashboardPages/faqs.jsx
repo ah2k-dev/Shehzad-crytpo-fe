@@ -227,12 +227,8 @@ const Faqs = () => {
     <div className="">
       <div className="py-4  flex justify-end w-full items-start">
     
-        <Button
-          onPress={onOpen}
-          className="bg-blackcurrent-500 text-white rounded-md"
-        >
-          <Plus /> Add New
-        </Button>
+      <Button onPress={onOpen} className='bg-blackcurrent-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
+        
       </div>
       <GeneralTable columns={coulumns} rows={rows} />
       <FormModal

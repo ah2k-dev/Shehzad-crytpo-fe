@@ -3,12 +3,18 @@ import Logo from '../common/logo'
 import { Link, useLocation } from 'react-router-dom'
 import { SidebarList } from '../../data/sidebarList'
 import { cn } from '@nextui-org/react'
-import { LogOut } from 'lucide-react'
+import { LogOut, X } from 'lucide-react'
 
-const Sidebar = () => {
+const Sidebar = ({isopen , onclose}) => {
     const location = useLocation()
+    console.log(isopen);
+    
   return (
-    <div className='bg-blackcurrent-500 w-1/5 h-screen'>
+    <div className={cn('md:static absolute top-0 w-72 z-30 bg-blackcurrent-500 md:w-1/5 h-screen transition-all transition-6s',isopen ? "translate-x-0 shadow-xl" :"translate-x-[-300px]")}>
+
+
+<X className='absolute right-2 top-2 text-white cursor-pointer' onClick={onclose}/>
+
        <div className='flex flex-col gap-3 justify-between h-full'>
 
         <Logo/>

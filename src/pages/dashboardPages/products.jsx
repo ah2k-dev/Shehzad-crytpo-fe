@@ -254,13 +254,13 @@ const Products = () => {
     <div className=''>
         <div className='py-4  flex justify-between w-full items-start'>
             <Input 
-            className='border border-slate-400 rounded-md w-[20rem]'
+            className='border border-slate-400 rounded-md w-[14rem] md:w-[20rem]'
             placeholder='Search Product...'
           type="text"
           endContent={
             <Search  className="bg-blackcurrent-300 rounded-md p-1 text-blackcurrent-700 text-xl text-default-400 pointer-events-none flex-shrink-0" />
           }/>
-            <Button onPress={onOpen} className='bg-blackcurrent-500 text-white rounded-md'><Plus/> Add New</Button>
+            <Button onPress={onOpen} className='bg-blackcurrent-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
         </div>
         <GeneralTable columns={coulumns} rows={rows} />
         <FormModal isOpen={isOpen} onClose={onClose} title="Add Product" content={<ProductForm onClose={onClose}/>}/>
