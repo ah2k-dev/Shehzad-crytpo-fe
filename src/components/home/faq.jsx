@@ -10,7 +10,7 @@ const Faqs = () => {
 
   return (
     <div className="bg-faqbg bg-cover bg-center ">
-      <div className="bg-blackcurrent-900/70 grid grid-cols-1 md:grid-cols-2 py-20 px-6  md:px-20">
+      <div className="bg-zinc-900/70 grid grid-cols-1 md:grid-cols-2 py-20 px-6  md:px-20">
         <div>
           <motion.p variants={fadeIn("up", 0.2)}
         initial="hidden"
@@ -65,7 +65,7 @@ const Faqs = () => {
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }} className="flex justify-center">
               <div className=" bg-slate-50/10 border mt-10 border-slate-200/30 p-2 rounded-lg">
-                <button className="font-Baskervville text-white px-6 py-2 rounded-lg capitalize bg-blackcurrent-600 hover:bg-blackcurrent-700">
+                <button className="font-Baskervville text-white px-6 py-2 rounded-lg capitalize bg-orange-400 hover:bg-orange-600">
                   Know More {" "}
                 </button>
               </div>
@@ -98,7 +98,7 @@ const Faqs = () => {
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }} className="flex justify-center">
               <div className=" bg-slate-50/10 border mt-10 border-slate-200/30 p-2 rounded-lg">
-                <button className="font-Baskervville text-white px-6 py-2 rounded-lg capitalize bg-blackcurrent-600 hover:bg-blackcurrent-700">
+                <button className="font-Baskervville text-white px-6 py-2 rounded-lg capitalize bg-orange-400 hover:bg-orange-600">
                   Contact Us{" "}
                 </button>
               </div>

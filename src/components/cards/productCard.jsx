@@ -125,7 +125,7 @@ export function ExpandableCardDemo({page}) {
                     $ 300.00
                   </motion.p>
                   <div className="flex items-center">
-                    <Button className="p-2 bg-blackcurrent-500 w-full text-white hover:bg-blackcurrent-600"><ShoppingCart className="me-2"/> Add to cart</Button>
+                    <Button className="p-2 bg-zinc-500 w-full text-white hover:bg-zinc-600"><ShoppingCart className="me-2"/> Add to cart</Button>
                     <Button className="p-2 bg-slate-200 w-full"> <Heart /> Add to favourite</Button>
                   </div>
               </div>
@@ -181,7 +181,7 @@ export function ExpandableCardDemo({page}) {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="flex gap-3 items-center justify-center px-4 py-2 text-sm rounded-md font-bold bg-gray-100 hover:bg-blackcurrent-600 hover:text-white text-black mt-4 md:mt-0"
+              className="flex gap-3 items-center justify-center px-4 py-2 text-sm rounded-md font-bold bg-gray-100 hover:bg-zinc-600 hover:text-white text-black mt-4 md:mt-0"
             >
                 <ShoppingCart />
               Add to Cart

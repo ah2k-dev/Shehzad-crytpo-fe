@@ -4,13 +4,13 @@ import { Check } from "lucide-react";
 
 const checkbox = tv({
   slots: {
-    base: "border border-slate-300 hover:bg-blackcurrent-200",
+    base: "border border-slate-300 hover:bg-zinc-200",
     content: "text-default-500"
   },
   variants: {
     isSelected: {
       true: {
-        base: "border-blackcurrent-500 bg-blackcurrent-200 hover:bg-blackcurrent-300 hover:border-primary-500",
+        base: "border-zinc-500 bg-zinc-200 hover:bg-zinc-300 hover:border-primary-500",
         content: "text-primary-foreground pl-1"
       }
     },
@@ -47,7 +47,7 @@ export const CustomCheckbox = (props) => {
           content: styles.content(),
         }}
         color="primary"
-        startContent={isSelected ? <Check  className="ml-1 text-blackcurrent-500" /> : null}
+        startContent={isSelected ? <Check  className="ml-1 text-zinc-500" /> : null}
         variant="faded"
         {...getLabelProps()}
       >

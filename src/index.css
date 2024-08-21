@@ -6,6 +6,7 @@
 .font-Lexend{
     font-family: Lexends Deca;
 }
+
 .swiper-button-disabled{
 
     color: #8b8a8a;
@@ -13,19 +14,21 @@
 .swiper-button-prev,
 .swiper-button-next{
 
-    color: #f53434;
+    color: #805d93;
 }
 .swiper-pagination-bullet-active{
-    background: #f53434;
+    background: #805d93;
 }
 
 body::-webkit-scrollbar{
     background-color: #c4c2c2;
     width: 8px;
+    border-radius: 20px;
     /* border-radius: 4px; */
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #f53434;
+    background-color: #805d93;
+    border-radius: 20px;
     /* border-radius: 4px; */
 }
 

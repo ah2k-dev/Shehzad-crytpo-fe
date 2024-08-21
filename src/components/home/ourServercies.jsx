@@ -27,43 +27,43 @@ const OusrServices = () => {
           {(inView) => (
   <div className="flex items-center">
 
-            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-blackcurrent-600/40 to-blackcurrent-500">
+            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-zinc-600/40 to-zinc-500">
               <p className="font-Baskervville text-xl">Fast & Secure Shipping</p>
               <Divider className="w-20 h-[0.1rem] bg-slate-200 my-3" />
               <p className="font-Baskervville text-sm">
               We know how important it is to receive your purchases quickly and securely. That's why we offer fast, reliable shipping options that ensure your order arrives at your doorstep in perfect condition. Track your orders in real-time for peace of mind.
               </p>
             </div>
-            <Divider className="w-10 h-[1px] bg-blackcurrent-500 hidden md:block" />
-            <div className={cn( "w-8 h-3 rounded-full  me-[-6px] hidden md:block",inView ? "bg-blackcurrent-500" : "bg-white")}></div>
+            <Divider className="w-10 h-[1px] bg-zinc-500 hidden md:block" />
+            <div className={cn( "w-8 h-3 rounded-full  me-[-6px] hidden md:block",inView ? "bg-zinc-500" : "bg-white")}></div>
   </div>)}
           </RoadmapCard>
 
           <RoadmapCard >
  {(inView) => (
           <div className="flex items-center mt-10 md:mt-[30rem]">
-            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-blackcurrent-600/40 to-blackcurrent-500">
+            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-zinc-600/40 to-zinc-500">
               <p className="font-Baskervville text-xl">24/7 Customer Support</p>
               <Divider className="w-20 h-[0.1rem] bg-slate-200 my-3" />
               <p className="font-Baskervville text-sm">
               Our dedicated customer support team is available around the clock to assist you with any questions or concerns. Whether you need help with an order, product information, or troubleshooting, we're here to provide the assistance you need, anytime, anywhere.
               </p>
             </div>
-            <Divider className="w-10 h-[1px] bg-blackcurrent-500 hidden md:block" />
-            <div className={cn( "w-12 h-3 rounded-full  me-[-7px] hidden md:block",inView ? "bg-blackcurrent-500" : "bg-white")}></div>
+            <Divider className="w-10 h-[1px] bg-zinc-500 hidden md:block" />
+            <div className={cn( "w-12 h-3 rounded-full  me-[-7px] hidden md:block",inView ? "bg-zinc-500" : "bg-white")}></div>
           </div>)}
           </RoadmapCard>
           <RoadmapCard >
           {(inView) => (
           <div className="flex items-center mt-10 md:mt-[30rem]">
-            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-blackcurrent-600/40 to-blackcurrent-500">
+            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-zinc-600/40 to-zinc-500">
               <p className="font-Baskervville text-xl">Gift Wrapping Services</p>
               <Divider className="w-20 h-[0.1rem] bg-slate-200 my-3" />
               <p className="font-Baskervville text-sm">
               Make your gifts even more special with our premium gift-wrapping services. Choose from a variety of wrapping styles and add a personal message to create the perfect gift for your loved ones.</p>
             </div>
-            <Divider className="w-10 h-[1px] bg-blackcurrent-500 hidden md:block" />
-            <div className={cn( "w-8 h-3 rounded-full  me-[-7px] hidden md:block",inView ? "bg-blackcurrent-500" : "bg-white")}></div>
+            <Divider className="w-10 h-[1px] bg-zinc-500 hidden md:block" />
+            <div className={cn( "w-8 h-3 rounded-full  me-[-7px] hidden md:block",inView ? "bg-zinc-500" : "bg-white")}></div>
           </div>)}
           </RoadmapCard>
           <div className="hidden md:flex justify-end">
@@ -74,9 +74,9 @@ const OusrServices = () => {
         <RoadmapCard >
         {(inView) => (
           <div className="flex items-center mt-10 md:mt-[20rem]">
-          <div className={cn("w-8 h-3 rounded-full  ms-[-7px] hidden md:block", inView ? "bg-blackcurrent-500":"bg-white")}></div>
-            <Divider className="w-10 h-[1px] bg-blackcurrent-500 hidden md:block" />
-            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-blackcurrent-600/40 to-blackcurrent-500">
+          <div className={cn("w-8 h-3 rounded-full  ms-[-7px] hidden md:block", inView ? "bg-zinc-500":"bg-white")}></div>
+            <Divider className="w-10 h-[1px] bg-zinc-500 hidden md:block" />
+            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-zinc-600/40 to-zinc-500">
               <p className="font-Baskervville text-xl">Secure Payment Options</p>
               <Divider className="w-20 h-[0.1rem] bg-slate-200 my-3" />
               <p className="font-Baskervville text-sm">
@@ -87,9 +87,9 @@ const OusrServices = () => {
         <RoadmapCard >
         {(inView) => (
           <div className="flex items-center mt-10 md:mt-[35rem]">
-            <div className={cn("w-8 h-3 rounded-full  ms-[-7px] hidden md:block", inView ? "bg-blackcurrent-500":"bg-white")}></div>
-            <Divider className="w-10 h-[1px] bg-blackcurrent-500 hidden md:block" />
-            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-blackcurrent-600/40 to-blackcurrent-500">
+            <div className={cn("w-8 h-3 rounded-full  ms-[-7px] hidden md:block", inView ? "bg-zinc-500":"bg-white")}></div>
+            <Divider className="w-10 h-[1px] bg-zinc-500 hidden md:block" />
+            <div className="rounded-lg p-8 border border-slate-200/20 text-white bg-gradient-to-b from-zinc-600/40 to-zinc-500">
               <p className="font-Baskervville text-xl">Exclusive Offers & Discounts</p>
               <Divider className="w-20 h-[0.1rem] bg-slate-200 my-3" />
               <p className="font-Baskervville text-sm">

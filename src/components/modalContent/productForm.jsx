@@ -25,7 +25,7 @@ const ProductForm = ({ onClose }) => {
         className="border border-slate-300 bg-white rounded-md w-full"
       >
         {["abc","xyz"].map((animal , i) => (
-          <SelectItem key={i} className="bg-slate-100 w-full rounded-md hover:bg-blackcurrent-500 hover:text-white">
+          <SelectItem key={i} className="bg-slate-100 w-full rounded-md hover:bg-zinc-500 hover:text-white">
             {animal}
           </SelectItem>
         ))}
@@ -51,7 +51,7 @@ const ProductForm = ({ onClose }) => {
             color="danger"
             variant="light"
             onPress={onClose}
-            className="bg-blackcurrent-500 rounded-md text-white"
+            className="bg-zinc-500 rounded-md text-white"
           >
             Close
           </Button>

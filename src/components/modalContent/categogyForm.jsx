@@ -27,7 +27,7 @@ const CategoryForm = ({ onClose }) => {
             color="danger"
             variant="light"
             onPress={onClose}
-            className="bg-blackcurrent-500 rounded-md text-white"
+            className="bg-zinc-500 rounded-md text-white"
           >
             Close
           </Button>

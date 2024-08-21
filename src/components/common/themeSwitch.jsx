@@ -14,7 +14,7 @@ const ThemeSwitchComp = (props) => {
   } = useSwitch(props);
   const toggleTheme = themeStore((state) => state.toggleTheme)
   return (
-    <div className="flex justify-center  border border-solid border-blackcurrent-600 rounded-md hidden md:block" >
+    <div className="flex justify-center  border border-solid border-zinc-600 rounded-md hidden md:block" >
       <Component {...getBaseProps()}>
           <VisuallyHidden>
             <input {...getInputProps()} />

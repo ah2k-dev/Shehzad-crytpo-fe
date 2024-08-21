@@ -10,7 +10,7 @@ const HowItWork = () => {
         <div className="rounded-md border border-slate-200">
           <div className="bg-howwork bg-cover rounded-tr-md rounded-tl-lg ">
             <div className="flex justify-center bg-gray-400/40 py-14 rounded-tr-md rounded-tl-lg ">
-              <span className="bg-blackcurrent-500 rounded-lg border border-blackcurrent-700 p-2 shadow-lg">
+              <span className="bg-zinc-500 rounded-lg border border-zinc-700 p-2 shadow-lg">
                 <Globe size={36} className="text-white" />
               </span>
             </div>
@@ -30,7 +30,7 @@ const HowItWork = () => {
         <div className="rounded-md border border-slate-200">
           <div className="bg-howwork bg-cover rounded-tr-md rounded-tl-lg ">
             <div className="flex justify-center bg-gray-400/40 py-14 rounded-tr-md rounded-tl-lg ">
-              <span className="bg-blackcurrent-500 rounded-lg border border-blackcurrent-700 p-2 shadow-lg">
+              <span className="bg-zinc-500 rounded-lg border border-zinc-700 p-2 shadow-lg">
                 <ShoppingCart size={36} className="text-white" />
               </span>
             </div>
@@ -51,7 +51,7 @@ const HowItWork = () => {
         <div className="rounded-md border border-slate-200">
           <div className="bg-howwork bg-cover rounded-tr-md rounded-tl-lg ">
             <div className="flex justify-center bg-gray-400/40 py-14 rounded-tr-md rounded-tl-lg ">
-              <span className="bg-blackcurrent-500 rounded-lg border border-blackcurrent-700 p-2 shadow-lg">
+              <span className="bg-zinc-500 rounded-lg border border-zinc-700 p-2 shadow-lg">
                 <Package size={36} className="text-white" />
               </span>
             </div>

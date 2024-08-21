@@ -52,7 +52,7 @@ const Category = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -80,7 +80,7 @@ const Category = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -108,7 +108,7 @@ const Category = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -136,7 +136,7 @@ const Category = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -164,7 +164,7 @@ const Category = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -192,7 +192,7 @@ const Category = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -220,7 +220,7 @@ const Category = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -238,10 +238,10 @@ const Category = () => {
           placeholder="Search Category..."
           type="text"
           endContent={
-            <Search className="bg-blackcurrent-300 rounded-md p-1 text-blackcurrent-700 text-xl text-default-400 pointer-events-none flex-shrink-0" />
+            <Search className="bg-zinc-300 rounded-md p-1 text-zinc-700 text-xl text-default-400 pointer-events-none flex-shrink-0" />
           }
         />
-         <Button onPress={onOpen} className='bg-blackcurrent-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
+         <Button onPress={onOpen} className='bg-zinc-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
         
       </div>
       <GeneralTable columns={coulumns} rows={rows} />

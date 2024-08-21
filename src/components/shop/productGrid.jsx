@@ -5,7 +5,7 @@ import { ExpandableCardDemo } from '../cards/productCard'
 const ProductGrid = () => {
   return (
     <div>
-      <div className='bg-blackcurrent-600 md:mx-4 p-2'>
+      <div className='bg-zinc-600 md:mx-4 p-2'>
         <p className='text-white'>Filters :</p>
       </div>
       <ExpandableCardDemo page={"shop"}/>

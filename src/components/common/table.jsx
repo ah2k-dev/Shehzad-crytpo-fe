@@ -17,12 +17,12 @@ const GeneralTable = ({ columns, rows }) => {
         aria-label="Example table with dynamic content"
         className="bg-slate-100 rounded-md overflow-y-auto h-[27rem]"
       >
-        <TableHeader className="bg-blackcurrent-500">
+        <TableHeader className="bg-zinc-500">
           {columns?.map((column) => (
             <TableColumn
               key={column.key}
               className={cn(
-                "bg-blackcurrent-500 text-white capitalize ",
+                "bg-zinc-500 text-white capitalize ",
                 // column?.key === "action" ||column?.key === "sno"
                 //   && "w-10"
                   

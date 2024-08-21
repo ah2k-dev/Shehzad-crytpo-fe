@@ -20,15 +20,15 @@ const Home = () => {
       {/* <Heading title={"Trending Products"}/>
       <ExpandableCardDemo/>
       <div className="flex justify-center">
-        <Button className="bg-blackcurrent-500 text-white hover:bg-blackcurrent-600 px-10 my-5 rounded-md flex items-center">See All <MoveRight className="ms-1" /></Button>
+        <Button className="bg-zinc-500 text-white hover:bg-zinc-600 px-10 my-5 rounded-md flex items-center">See All <MoveRight className="ms-1" /></Button>
       </div>
 
       <Heading title={"Featured Products"}/>
       <ExpandableCardDemo/>
       <div className="flex justify-center">
-        <Button className="bg-blackcurrent-500 text-white hover:bg-blackcurrent-600 px-10 my-5 rounded-md flex items-center">See All <MoveRight className="ms-1" /></Button>
+        <Button className="bg-zinc-500 text-white hover:bg-zinc-600 px-10 my-5 rounded-md flex items-center">See All <MoveRight className="ms-1" /></Button>
       </div> */}
-      <OusrServices/>
+      {/* <OusrServices/> */}
 <HowItWork/>
       </div>
       <Faqs/>

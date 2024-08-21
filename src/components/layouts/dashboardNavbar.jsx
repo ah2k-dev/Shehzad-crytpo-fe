@@ -22,7 +22,7 @@ const DashboardNavbar = ({onopen}) => {
       <div>
 
       <p className="text-slate-500 font-semibold text-3xl capitalize">{routeName}</p>
-      <Divider className="ms-1 mt-1 w-10 md:w-10 h-1 bg-blackcurrent-500 rounded-sm" />
+      <Divider className="ms-1 mt-1 w-10 md:w-10 h-1 bg-zinc-500 rounded-sm" />
       </div>
     </div>
   );

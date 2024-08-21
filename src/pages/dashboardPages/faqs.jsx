@@ -50,7 +50,7 @@ const Faqs = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -77,7 +77,7 @@ const Faqs = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -104,7 +104,7 @@ const Faqs = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -131,7 +131,7 @@ const Faqs = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -158,7 +158,7 @@ const Faqs = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -185,7 +185,7 @@ const Faqs = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -212,7 +212,7 @@ const Faqs = () => {
   <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
     
     <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-    <DropdownItem key="edit" className='hover:bg-blackcurrent-500 rounded-md hover:text-white'>Delete</DropdownItem>
+    <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
     
   </DropdownMenu>
 </Dropdown>
@@ -227,7 +227,7 @@ const Faqs = () => {
     <div className="">
       <div className="py-4  flex justify-end w-full items-start">
     
-      <Button onPress={onOpen} className='bg-blackcurrent-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
+      <Button onPress={onOpen} className='bg-zinc-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
         
       </div>
       <GeneralTable columns={coulumns} rows={rows} />
