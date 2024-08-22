@@ -46,3 +46,9 @@ body::-webkit-scrollbar-thumb{
 .text-foreground-500 {
     color: #9ca3af ;
 }
+
+
+.section {
+    display: flex;
+    justify-content: center;
+  }
