@@ -61,9 +61,7 @@ const HomeLayout = () => {
         )}
       >
 
-        <TopBar/>
       <TopNavbar floating={true}/>
-      {/* <CategoryList/> */}
       </motion.div>
       </AnimatePresence>
 </div>

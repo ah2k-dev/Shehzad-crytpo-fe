@@ -8,7 +8,7 @@ const ShortServices = () => {
             <Award size={50}/>
         <div>
                 <p className='text-xl font-Baskervville font-semibold'>Premium Quality</p>
-                <p className='text-slate-500'>100% quality guarented</p>
+                <p className='text-slate-400'>100% quality guarented</p>
             </div>
         </div>
         
@@ -16,7 +16,7 @@ const ShortServices = () => {
             <BadgeDollarSign  size={50}/>
         <div>
                 <p className='text-xl font-Baskervville font-semibold'>Reasonable Price</p>
-                <p className='text-slate-500'>100% quality guarented</p>
+                <p className='text-slate-400'>100% quality guarented</p>
             </div>
         </div>
         
@@ -24,7 +24,7 @@ const ShortServices = () => {
             <Truck  size={50}/>
         <div>
                 <p className='text-xl font-Baskervville font-semibold'>Fast Delivery</p>
-                <p className='text-slate-500'>100% quality guarented</p>
+                <p className='text-slate-400'>100% quality guarented</p>
             </div>
         </div>
         
@@ -32,7 +32,7 @@ const ShortServices = () => {
             <CalendarClock  size={50}/>
         <div>
                 <p className='text-xl font-Baskervville font-semibold'>24/7 Service</p>
-                <p className='text-slate-500'>100% quality guarented</p>
+                <p className='text-slate-400'>100% quality guarented</p>
             </div>
         </div>
         

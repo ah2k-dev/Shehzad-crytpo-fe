@@ -179,7 +179,7 @@ const SectionR = ({ text1, text2, image, imageDim, lineHeight }) => {
               transition={{ duration: 4 }}
               d="M1 0 L1 100"
               fill="none"
-              stroke="#333"
+              stroke="#888"
               strokeWidth="0.5"
             />
           </svg>
@@ -204,6 +204,7 @@ const SectionR = ({ text1, text2, image, imageDim, lineHeight }) => {
             opacity: isInView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
+          className="text-orange-500 font-Baskervville"
         >
           {text1}
         </span>
@@ -230,7 +231,7 @@ const SectionR = ({ text1, text2, image, imageDim, lineHeight }) => {
                 transition={{ duration: 4 }}
                 d="M1 13.5759C1 13.5759 1 3.25302 6.0209 1.26266C12.7257 -1.39523 34.1379 16.9775 40.163 17.6854C46.1881 18.3933 962 17.6854 962 17.6854"
                 fill="none"
-                stroke="#333"
+                stroke="#888"
                 strokeWidth="3"
               />
             </svg>
@@ -239,7 +240,7 @@ const SectionR = ({ text1, text2, image, imageDim, lineHeight }) => {
         <span
           style={{
             marginLeft: "1.5rem",
-            color: "#666",
+            
             width: "60%",
             fontSize: "1.2rem",
             opacity: isInView ? 1 : 0,
@@ -247,6 +248,7 @@ const SectionR = ({ text1, text2, image, imageDim, lineHeight }) => {
             maxWidth: "450px",
             marginTop: "1rem",
           }}
+          className="text-slate-300"
         >
           {text2}
         </span>
@@ -282,6 +284,7 @@ const SectionL = ({ text1, text2, image, imageDim, lineHeight }) => {
             opacity: isInView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
+           className="text-orange-500 font-Baskervville"
         >
           {text1}
         </span>
@@ -309,7 +312,7 @@ const SectionL = ({ text1, text2, image, imageDim, lineHeight }) => {
                 d="M961 13.6843C961 13.6843 961 3.32767 955.963 1.33079C949.237 -1.3358 932.291 12.9742 926.247 13.6844C920.203 14.3946 -4.19617e-05 13.6843 -4.19617e-05 13.6843
 "
                 fill="none"
-                stroke="#333"
+                stroke="#888"
                 strokeWidth="3"
               />
             </svg>
@@ -318,7 +321,6 @@ const SectionL = ({ text1, text2, image, imageDim, lineHeight }) => {
         <span
           style={{
             marginRight: "1.5rem",
-            color: "#666",
             width: "60%",
             fontSize: "1.2rem",
             textAlign: "right",
@@ -327,6 +329,7 @@ const SectionL = ({ text1, text2, image, imageDim, lineHeight }) => {
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             marginTop: "1rem",
           }}
+          className="text-slate-300"
         >
           {text2}
         </span>
@@ -359,7 +362,7 @@ const SectionL = ({ text1, text2, image, imageDim, lineHeight }) => {
               transition={{ duration: 4 }}
               d="M1 0 L1 100"
               fill="none"
-              stroke="#333"
+              stroke="#888"
               strokeWidth="0.5"
             />
           </svg>

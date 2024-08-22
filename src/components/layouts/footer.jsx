@@ -36,7 +36,7 @@ const Footer = () => {
             
             <p className='text-orange-400 font-medium text-xl '>Subscribe to our newsletter</p>
             <Input
-    className='bg-white rounded-md'
+    className='bg-zinc-900 rounded-md'
     placeholder='Enter your email...'
           type="text"
           endContent={

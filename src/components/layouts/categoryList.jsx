@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import {  Menu, MenuItem } from "../aceternityUi/menu";
 import { CategoryMenu } from "../../data/categoryMenu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button, cn, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@nextui-org/react";
 
 
 
 const CategoryList = () => {
   const [active, setActive] = useState("Products");
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const location = useLocation()
   return (
     <div>
 
@@ -26,23 +28,54 @@ const CategoryList = () => {
           </div>
         </MenuItem>
       </Menu> */}
-      {CategoryMenu?.map((value , i)=>(
-
-      <Dropdown key={i} onOpenChange={()=>setActive(value?.label)} onClose={()=>setActive("")}>
-      <DropdownTrigger className="cursor-pointer z-10">
-        
-      <Button className={cn(" transition-all transition-3s cursor-pointer hidden md:block p-2 text-white z-[100px]",active === value?.label && "border-b-2 border-orange-400 text-white font-bold z-10" )}>{value?.label}</Button>
-          
-      </DropdownTrigger>
-      <DropdownMenu aria-label="Static Actions" className="bg-zinc-800 text-white shadow-lg border-t-4 border-orange-400 mt-1">
-        {value?.subCategory?.map((value)=>(
-
-        <DropdownItem key={value} className="hover:text-orange-400 rounded-md">{value}</DropdownItem>
-        ))}
-        
-      </DropdownMenu>
-    </Dropdown>
+      <Link to={"/"}>
+        <Button
+                className={cn(
+                  "transition-all transition-3s cursor-pointer hidden md:block p-2 text-white z-[100px]",
+                  location?.pathname === "/" &&
+                  "border-t-2 border-orange-400 text-white font-bold z-10"
+                )}
+                >
+              Home
+              </Button>
+                </Link>
+     {CategoryMenu?.map((value, i) => (
+       <div
+         onMouseEnter={() => setHoveredIndex(i)} // Set the hovered dropdown
+         onMouseLeave={() => setHoveredIndex(null)} // Reset the hovered dropdown
+         >
+        <Dropdown
+          key={i}
+          placement="bottom-start"
+          isOpen={hoveredIndex === i} // Open dropdown if it is hovered
+          onOpenChange={() => setActive(value?.label)}
+          onClose={() => setActive("")}
+        >
+          <DropdownTrigger className="cursor-pointer z-10">
+              <Button
+                className={cn(
+                  "transition-all transition-3s cursor-pointer hidden md:block p-2 text-white z-[100px]",
+                  hoveredIndex === i &&
+                    "border-t-2 border-orange-400 text-white font-bold z-10"
+                )}
+              >
+                {value?.label}
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu
+              aria-label="Static Actions"
+              className="bg-zinc-800 text-white shadow-lg border-t-4 border-orange-400 mt-1"
+              >
+              {value?.subCategory?.map((subValue) => (
+                <DropdownItem key={subValue} className="hover:text-orange-400 rounded-md">
+                  {subValue}
+                </DropdownItem>
+              ))}
+            </DropdownMenu>
+        </Dropdown>
+              </div>
       ))}
+    
       {/* <p className="hover:font-medium hover:text-zinc-500 transition-all transition-3s cursor-pointer hidden md:block">Furniture</p>
       <p className="hover:font-medium hover:text-zinc-500 transition-all transition-3s cursor-pointer hidden md:block">Fashion & beauty</p>
       <p className="hover:font-medium hover:text-zinc-500 transition-all transition-3s cursor-pointer hidden md:block">Clothing</p> */}

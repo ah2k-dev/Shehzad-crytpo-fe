@@ -7,7 +7,7 @@ const HowItWork = () => {
     <div>
       <Heading title={"How it works?"} />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-20">
-        <div className="rounded-md border border-slate-200">
+        <div className="rounded-md border border-zinc-700 bg-zinc-900 shadow-zinc-100">
           <div className="bg-howwork bg-cover rounded-tr-md rounded-tl-lg ">
             <div className="flex justify-center bg-gray-400/40 py-14 rounded-tr-md rounded-tl-lg ">
               <span className="bg-zinc-500 rounded-lg border border-zinc-700 p-2 shadow-lg">
@@ -27,7 +27,7 @@ const HowItWork = () => {
             </p>
           </div>
         </div>
-        <div className="rounded-md border border-slate-200">
+        <div className="rounded-md border border-zinc-700 bg-zinc-900 shadow-zinc-100">
           <div className="bg-howwork bg-cover rounded-tr-md rounded-tl-lg ">
             <div className="flex justify-center bg-gray-400/40 py-14 rounded-tr-md rounded-tl-lg ">
               <span className="bg-zinc-500 rounded-lg border border-zinc-700 p-2 shadow-lg">
@@ -48,7 +48,7 @@ const HowItWork = () => {
             </p>
           </div>
         </div>
-        <div className="rounded-md border border-slate-200">
+        <div className="rounded-md border border-zinc-700 bg-zinc-900 shadow-zinc-100">
           <div className="bg-howwork bg-cover rounded-tr-md rounded-tl-lg ">
             <div className="flex justify-center bg-gray-400/40 py-14 rounded-tr-md rounded-tl-lg ">
               <span className="bg-zinc-500 rounded-lg border border-zinc-700 p-2 shadow-lg">

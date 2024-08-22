@@ -7,7 +7,7 @@ const Filters = () => {
     const [brandSelected, setBrandsSelected] = useState([]);
   return (
     <div>
-      <p className="text-xl text-zinc-600 font-medium mb-3">
+      <p className="text-xl text-orange-400 font-medium mb-3">
         Categories :
       </p>
 
@@ -26,7 +26,7 @@ const Filters = () => {
               base: cn(
                 "inline-flex capitalize m-0 bg-content1 hover:bg-content2 items-center justify-between",
                 "flex-row-reverse max-w-[300px] cursor-pointer rounded-lg gap-1 p-1 border-2 border-transparent",
-                "data-[selected=true]:bg-zinc-100"
+                "data-[selected=true]:bg-orange-400/40 "
               ),
             }}
           >
@@ -35,7 +35,7 @@ const Filters = () => {
         ))}
       </RadioGroup>
 
-      <p className="text-xl text-zinc-600 font-medium my-3">
+      <p className="text-xl text-orange-400 font-medium my-3">
         Price :
       </p>
 
@@ -49,7 +49,7 @@ const Filters = () => {
         ))}
        </CheckboxGroup>
 
-       <p className="text-xl text-zinc-600 font-medium my-3">
+       <p className="text-xl text-orange-400 font-medium my-3">
         Brands :
       </p>
 

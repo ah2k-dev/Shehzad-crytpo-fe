@@ -21,13 +21,13 @@
 }
 
 body::-webkit-scrollbar{
-    background-color: #c4c2c2;
+    background-color: #18181b;
     width: 8px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     /* border-radius: 4px; */
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #805d93;
+    background-color: #f97213;
     border-radius: 20px;
     /* border-radius: 4px; */
 }
