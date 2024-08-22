@@ -45,7 +45,7 @@ const Faqs = () => {
         viewport={{ once: true, amount: 0.7 }} className="text-4xl text-white font-Baskervville mb-6 text-center">
               Still Wondering?
             </motion.p>
-            <motion.div variants={fadeIn("left", 0.2)}
+            <motion.div variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}>
@@ -78,7 +78,7 @@ const Faqs = () => {
         viewport={{ once: true, amount: 0.7 }}  className="text-4xl text-white font-Baskervville mb-6 text-center">
             I’m Interested, but would like to know more
             </motion.p>
-            <motion.div variants={fadeIn("left", 0.2)}
+            <motion.div variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}>
