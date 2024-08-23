@@ -218,35 +218,35 @@ const Products = () => {
       </div>
           ),
         },
-        {key:6,
-           sno:"07",
-           name:"shoes",
-           category:"footware",
-           desc:"Loren ipsm of that the way he finds enrishment...",
-           price:"900",
-           discount:"10%",
-           action: (
-            <div className="relative flex justify-end items-center gap-2 ">
-            <Dropdown>
-<DropdownTrigger>
-  <span 
+//         {key:6,
+//            sno:"07",
+//            name:"shoes",
+//            category:"footware",
+//            desc:"Loren ipsm of that the way he finds enrishment...",
+//            price:"900",
+//            discount:"10%",
+//            action: (
+//             <div className="relative flex justify-end items-center gap-2 ">
+//             <Dropdown>
+// <DropdownTrigger>
+//   <span 
   
-  className='p-2 rounded-full hover:bg-slate-200 cursor-pointer'
-    variant="bordered" 
-  >
-  <EllipsisVertical />
-  </span>
-</DropdownTrigger>
-<DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
-  <DropdownItem key="new" className='hover:bg-slate-300 rounded-md'>View</DropdownItem>
-  <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
-  <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
+//   className='p-2 rounded-full hover:bg-slate-200 cursor-pointer'
+//     variant="bordered" 
+//   >
+//   <EllipsisVertical />
+//   </span>
+// </DropdownTrigger>
+// <DropdownMenu aria-label="Static Actions" className='bg-slate-200 border border-slate-200 shadow-md rounded-md'>
+//   <DropdownItem key="new" className='hover:bg-slate-300 rounded-md'>View</DropdownItem>
+//   <DropdownItem key="copy" className='hover:bg-slate-300 rounded-md'>Edit</DropdownItem>
+//   <DropdownItem key="edit" className='hover:bg-zinc-500 rounded-md hover:text-white'>Delete</DropdownItem>
   
-</DropdownMenu>
-</Dropdown>
-      </div>
-          ),
-        },
+// </DropdownMenu>
+// </Dropdown>
+//       </div>
+//           ),
+//         },
         
         
     ]
@@ -254,13 +254,13 @@ const Products = () => {
     <div className=''>
         <div className='py-4  flex justify-between w-full items-start'>
             <Input 
-            className='border border-slate-400 rounded-md w-[14rem] md:w-[20rem]'
+            className='border border-zinc-800 rounded-md w-[14rem] md:w-[20rem]'
             placeholder='Search Product...'
           type="text"
           endContent={
             <Search  className="bg-zinc-300 rounded-md p-1 text-zinc-700 text-xl text-default-400 pointer-events-none flex-shrink-0" />
           }/>
-            <Button onPress={onOpen} className='bg-zinc-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
+            <Button onPress={onOpen} className='bg-orange-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
         </div>
         <GeneralTable columns={coulumns} rows={rows} />
         <FormModal isOpen={isOpen} onClose={onClose} title="Add Product" content={<ProductForm onClose={onClose}/>}/>

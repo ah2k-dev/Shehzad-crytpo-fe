@@ -1,44 +1,226 @@
-import React, { useEffect, useState } from 'react'
-import Logo from '../common/logo'
-import { Search ,ShoppingCart,Heart,UserRound, Facebook, Instagram, Twitter} from 'lucide-react';
-import { Button, cn, Dropdown, DropdownMenu, DropdownTrigger, Input} from "@nextui-org/react";
-import ThemeSwitch from '../common/themeSwitch';
-import CategoryList from './categoryList';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import Logo from "../common/logo";
+import {
+  Search,
+  ShoppingCart,
+  Heart,
+  UserRound,
+  Facebook,
+  Instagram,
+  Twitter,
+} from "lucide-react";
+import {
+  Button,
+  cn,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
+  Input,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+} from "@nextui-org/react";
+import ThemeSwitch from "../common/themeSwitch";
+import CategoryList from "./categoryList";
+import { Link, useLocation } from "react-router-dom";
+import { CategoryMenu } from "../../data/categoryMenu";
 
+const TopNavbar = ({ floating }) => {
+  const location = useLocation();
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [menuHoveredIndex, setMenuHoveredIndex] = useState(null);
 
-const TopNavbar = ({floating}) => {
-  const location = useLocation()
-  const [searchOpen , setSearchOpen] = useState(false)
-  
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location?.pathname]);
+
   return (
-  <div className={cn(' relative z-30 flex justify-between  items-center gap-4 p-2 px-2 md:px-10',floating ? "bg-zinc-800" :"bg-transparent" ,location?.pathname !== "/" && "bg-zinc-800")}>
-    <Logo/>
-    <CategoryList/>
-    <div className={cn(' flex justify-center rounded-md md:w-2/4   pe-1 md:pe-10' , searchOpen ? "w-2/4 md:w-1/4" :"  md:w-0")}>
-    <Input
-    className={cn(' rounded-md dark:bg-zinc-900 transition-all' , searchOpen ? "block " : "hidden ")}
-    placeholder='Search Product...'
-          type="text"
-          endContent={
-            <div onClick={()=>setSearchOpen(!searchOpen)} className='cursor-pointer'>
-            <Search  className=" bg-zinc-300 rounded-md p-1 text-zinc-700 text-xl text-default-400 pointer-events-none flex-shrink-0" />
-          </div>}
+   
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      className=" sm:px-20 bg-transparent backdrop-blur-none backdrop-saturate-100"
+    >
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
         />
-         <div className={cn('bg-zinc-300 p-1 rounded-lg cursor-pointer',searchOpen ? "hidden " : "block ")} onClick={()=>setSearchOpen(true)}>
+        <NavbarBrand>
+          <Logo />
+        </NavbarBrand>
+      </NavbarContent>
 
-          <Search onClick={()=>setSearchOpen(true)} className="cursor-pointer bg-zinc-300 rounded-md p-1 text-zinc-800 text-xl text-default-400 pointer-events-none flex-shrink-0" />
-         </div>
-    </div>
-    {/* <div className='flex items-center gap-4 '>
-    <Facebook  className='text-white cursor-pointer hidden md:block'/>
-    <Instagram className='text-white cursor-pointer hidden md:block'/>
-    <Twitter  className='text-white cursor-pointer '/>
-    <ThemeSwitch/>
-       
-    </div> */}
-  </div>
-  )
-}
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
 
-export default TopNavbar
+        <NavbarItem className="border-t-2 border-transparent p-2 hover:border-orange-400/60 hover:text-slate-100/70">
+          <Link to={"/"}>Home</Link>
+        </NavbarItem>
+
+        <NavbarItem className="border-t-2 border-transparent p-2 hover:border-orange-400/60 hover:text-slate-100/70">
+          <Link to={"/"}>About</Link>
+        </NavbarItem>
+
+        {CategoryMenu.map((item, index) => (
+          <NavbarItem key={index}>
+            <div
+              onMouseEnter={() => setHoveredIndex(index)} // Set the hovered dropdown
+              onMouseLeave={() => setHoveredIndex(null)} // Reset the hovered dropdown
+            >
+              <Dropdown
+                // key={i}
+                placement="bottom-start"
+                isOpen={hoveredIndex === index} // Open dropdown if it is hovered
+                onOpenChange={() => setActive(value?.label)}
+                onClose={() => setActive("")}
+              >
+                <DropdownTrigger className="cursor-pointer z-10">
+                  <Button
+                    className={cn(
+                      "border-t-2 border-transparent transition-all transition-3s cursor-pointer hidden md:block p-2 text-white z-[100px]",
+                      hoveredIndex === index &&
+                        " border-orange-400 text-white  z-10"
+                    )}
+                  >
+                    {item?.label}
+                  </Button>
+                </DropdownTrigger>
+                <DropdownMenu
+                  aria-label="Static Actions"
+                  className="bg-zinc-800 text-white shadow-lg border-t-4 border-orange-400 mt-1"
+                >
+                  {item?.subCategory?.map((subValue) => (
+                    <DropdownItem
+                      key={subValue}
+                      className="hover:text-orange-400 rounded-md"
+                    >
+                      <Link
+                        key={subValue}
+                        to={`/shop?${subValue}`}
+                        className="block"
+                      >
+                        {subValue}
+                      </Link>
+                    </DropdownItem>
+                  ))}
+                </DropdownMenu>
+              </Dropdown>
+            </div>
+          </NavbarItem>
+        ))}
+      </NavbarContent>
+
+      <NavbarContent justify="end">
+        <NavbarItem>
+          <div
+            className={cn(
+              " flex justify-center rounded-md w-full transition-all duration-600   ",
+              searchOpen ? "w-full " : "  md:w-0"
+            )}
+          >
+            <Input
+              className={cn(
+                " rounded-md dark:bg-zinc-800 transition-all",
+                searchOpen ? "block " : "hidden "
+              )}
+              placeholder="Search Product..."
+              type="text"
+              endContent={
+                <div
+                  onClick={() => setSearchOpen(!searchOpen)}
+                  className="cursor-pointer"
+                >
+                  <Search className=" bg-zinc-300 rounded-md p-1 text-zinc-700 text-xl text-default-400 pointer-events-none flex-shrink-0" />
+                </div>
+              }
+            />
+            <div
+              className={cn(
+                "bg-zinc-300 p-1 rounded-lg cursor-pointer",
+                searchOpen ? "hidden " : "block "
+              )}
+              onClick={() => setSearchOpen(true)}
+            >
+              <Search
+                onClick={() => setSearchOpen(true)}
+                className="cursor-pointer bg-zinc-300 rounded-md p-1 text-zinc-800 text-xl text-default-400 pointer-events-none flex-shrink-0"
+              />
+            </div>
+          </div>
+        </NavbarItem>
+      </NavbarContent>
+
+      <NavbarMenu className="mt-16 bg-zinc-500/50">
+        <NavbarMenuItem>
+          <Link to={"/"}>
+            <p className="p-2 text-white z-[100px] hover:text-orange-300">
+              Home
+            </p>
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link to={"/about"}>
+            <p className="p-2 text-white z-[100px] hover:text-orange-300">
+              About
+            </p>
+          </Link>
+        </NavbarMenuItem>
+        {CategoryMenu.map((item, index) => (
+          <NavbarMenuItem key={index}>
+            <div
+              onMouseEnter={() => setMenuHoveredIndex(index)} // Set the hovered dropdown
+              onMouseLeave={() => setMenuHoveredIndex(null)} // Reset the hovered dropdown
+            >
+              <Dropdown
+                // key={i}
+                placement="left-start"
+                isOpen={menuHoveredIndex === index} // Open dropdown if it is hovered
+                onOpenChange={() => setActive(value?.label)}
+                onClose={() => setActive("")}
+                className="bg-orage-500"
+              >
+                <DropdownTrigger className="cursor-pointer z-10">
+                  <Button
+                    className={cn(
+                      " transition-all transition-3s cursor-pointer  block p-2 text-white z-[100px]",
+                      menuHoveredIndex === index && "  text-orange-300  z-10"
+                    )}
+                  >
+                    {item?.label}
+                  </Button>
+                </DropdownTrigger>
+                <DropdownMenu
+                  aria-label="Static Actions"
+                  className="bg-zinc-800 text-white shadow-lg border-t-4 border-orange-400 mt-1"
+                >
+                  {item?.subCategory?.map((subValue) => (
+                    <DropdownItem
+                      key={subValue}
+                      className="hover:text-orange-400 rounded-md"
+                    >
+                      <Link
+                        key={subValue}
+                        to={`/shop?${subValue}`}
+                        className="block"
+                      >
+                        {subValue}
+                      </Link>
+                    </DropdownItem>
+                  ))}
+                </DropdownMenu>
+              </Dropdown>
+            </div>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </Navbar>
+  );
+};
+
+export default TopNavbar;

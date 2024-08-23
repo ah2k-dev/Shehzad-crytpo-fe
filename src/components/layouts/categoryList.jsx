@@ -54,9 +54,9 @@ const CategoryList = () => {
           <DropdownTrigger className="cursor-pointer z-10">
               <Button
                 className={cn(
-                  "transition-all transition-3s cursor-pointer hidden md:block p-2 text-white z-[100px]",
+                  "border-t-2 border-transparent transition-all transition-3s cursor-pointer hidden md:block p-2 text-white z-[100px]",
                   hoveredIndex === i &&
-                    "border-t-2 border-orange-400 text-white font-bold z-10"
+                    " border-orange-400 text-white  z-10"
                 )}
               >
                 {value?.label}
@@ -68,7 +68,9 @@ const CategoryList = () => {
               >
               {value?.subCategory?.map((subValue) => (
                 <DropdownItem key={subValue} className="hover:text-orange-400 rounded-md">
+                <Link key={subValue} to={`/shop?${subValue}`} className="block">
                   {subValue}
+                </Link>
                 </DropdownItem>
               ))}
             </DropdownMenu>

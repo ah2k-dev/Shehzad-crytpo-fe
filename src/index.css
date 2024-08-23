@@ -7,6 +7,10 @@
     font-family: Lexends Deca;
 }
 
+header {
+    max-width: 100vw !important;
+}
+
 .swiper-button-disabled{
 
     color: #8b8a8a;

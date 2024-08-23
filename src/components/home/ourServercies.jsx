@@ -93,7 +93,7 @@ const OusrServices = () => {
             }
             image={image1}
             imageDim={[200, 200]}
-            lineHeight={"230px"}
+            lineHeight={"340px"}
           />
           <MobileSection
             text1={"LEO Coupe Design Validated"}
@@ -102,14 +102,14 @@ const OusrServices = () => {
             }
             image={image2}
             imageDim={[200, 250]}
-            lineHeight={"260px"}
+            lineHeight={"340px"}
           />
           <MobileSection
             text1={"Subscale Flight Testing"}
             text2={"Subscale flight testing on ArcSpear Jet Drone platform."}
             image={image3}
             imageDim={[470, 250]}
-            lineHeight={"220px"}
+            lineHeight={"400px"}
           />
           <MobileSection
             text1={"Testing & Development"}
@@ -118,7 +118,7 @@ const OusrServices = () => {
             }
             image={image4}
             imageDim={[200, 250]}
-            lineHeight={"260px"}
+            lineHeight={"285px"}
           />
           
         </div>
@@ -424,8 +424,8 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
                 transition={{ duration: 4 }}
                 d="M1 0 L1 100"
                 fill="none"
-                stroke="#000"
-                strokeWidth="0.2"
+                stroke="#888"
+                strokeWidth="0.4"
               />
             </svg>
           </div>
@@ -433,7 +433,7 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
       </div>
       <div
         style={{
-          width: "75%",
+          width: "95%",
           display: "flex",
           flexDirection: "column",
           height: "max-content",
@@ -450,6 +450,7 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
             opacity: isInView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
+         className="text-orange-500 font-Baskervville"
         >
           {text1}
         </span>
@@ -476,7 +477,7 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
                 transition={{ duration: 4 }}
                 d="M1 13.5759C1 13.5759 1 3.25302 6.0209 1.26266C12.7257 -1.39523 34.1379 16.9775 40.163 17.6854C46.1881 18.3933 962 17.6854 962 17.6854"
                 fill="none"
-                stroke="#000"
+                stroke="#888"
                 strokeWidth="5"
               />
             </svg>
@@ -485,13 +486,14 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
         <span
           style={{
             marginLeft: "1rem",
-            color: "#666",
-            width: "80%",
+            
+            width: "95%",
             fontSize: "0.8rem",
             opacity: isInView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             maxWidth: "450px",
           }}
+          className="text-slate-300 my-4"
         >
           {text2}
         </span>
@@ -501,7 +503,7 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
             justifyContent: "space-around",
             alignItems: "center",
             maxWidth: "450px",
-            width: "80%",
+            width: "95%",
             opacity: isInView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
@@ -512,7 +514,7 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                backgroundColor: "#FFFFFF",
+                backgroundColor: "#333",
                 borderRadius: "20px",
                 width: "100%",
                 marginLeft: "1.5rem",
@@ -520,8 +522,8 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
             >
               <img
                 src={image}
-                width={imageDim[0] - 100}
-                height={imageDim[1] - 100}
+                width={imageDim[0] - 10}
+                height={imageDim[1] - 10}
                 alt="icon"
                 style={{
                   padding: "0.5rem",

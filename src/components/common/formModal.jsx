@@ -6,11 +6,11 @@ const FormModal = ({isOpen,onClose,content , title}) => {
     
   return (
     <div>
-        <Modal backdrop={"blur"} isOpen={isOpen} onClose={onClose} className='bg-white rounded-md shadow-lg border border-slate-200'>
+        <Modal backdrop={"blur"} isOpen={isOpen} onClose={onClose} className='bg-zinc-900 rounded-md shadow-lg border border-zinc-800'>
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">{title}</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1 text-white">{title}</ModalHeader>
             {content}
             </>
           )}

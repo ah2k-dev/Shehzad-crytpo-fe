@@ -9,13 +9,13 @@ const CategoryForm = ({ onClose }) => {
       <form>
       <ModalBody>
           <Input
-            className="border border-slate-300 rounded-md"
+            className="border border-zinc-600 rounded-md text-white"
             key="outside"
             type="text"
             placeholder="Category"
           />
               <Textarea
-                className="border border-slate-300 rounded-md"
+                className="border border-zinc-600 rounded-md text-white"
                 key="outside"
                 type="text"
                 placeholder="Sub Category e.g(abc,xyz,...)"
@@ -34,7 +34,7 @@ const CategoryForm = ({ onClose }) => {
           <Button
             color="primary"
             onPress={onClose}
-            className="bg-slate-500 rounded-md text-white"
+            className="bg-orange-500 rounded-md text-white"
           >
             Add Category
           </Button>

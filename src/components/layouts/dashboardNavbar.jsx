@@ -16,13 +16,13 @@ const DashboardNavbar = ({onopen}) => {
   }
   
   return (
-    <div className="py-5 flex items-center gap-2 sticky top-0 bg-white z-20">
+    <div className="py-5 flex items-center gap-2 sticky top-0 bg-transparent z-20">
       {" "}
-      <Menu size={28} onClick={onopen} className="cursor-pointer"/>
+      <Menu size={28} onClick={onopen} className="cursor-pointer block md:hidden"/>
       <div>
 
-      <p className="text-slate-500 font-semibold text-3xl capitalize">{routeName}</p>
-      <Divider className="ms-1 mt-1 w-10 md:w-10 h-1 bg-zinc-500 rounded-sm" />
+      <p className="text-slate-200 font-semibold text-3xl capitalize font-Baskervville">{routeName}</p>
+      <Divider className="ms-1 mt-1 w-10 md:w-10 h-1 bg-orange-500 rounded-sm" />
       </div>
     </div>
   );

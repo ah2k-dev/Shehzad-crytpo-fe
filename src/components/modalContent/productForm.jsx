@@ -9,23 +9,23 @@ const ProductForm = ({ onClose }) => {
       <form>
         <ModalBody>
           <Input
-            className="border border-slate-300 rounded-md"
+            className="border border-zinc-600 rounded-md"
             key="outside"
             type="text"
             placeholder="Product Name"
           />
               <Textarea
-                className="border border-slate-300 rounded-md"
+                className="border border-zinc-600 rounded-md"
                 key="outside"
                 type="text"
                 placeholder="Description..."
                 />
                  <Select 
         placeholder="Select Category" 
-        className="border border-slate-300 bg-white rounded-md w-full"
+        className="border border-zinc-600 bg-transparent rounded-md w-full"
       >
         {["abc","xyz"].map((animal , i) => (
-          <SelectItem key={i} className="bg-slate-100 w-full rounded-md hover:bg-zinc-500 hover:text-white">
+          <SelectItem key={i} className="bg-zinc-700 w-full rounded-md hover:bg-zinc-500 text-white hover:text-white">
             {animal}
           </SelectItem>
         ))}
@@ -33,13 +33,13 @@ const ProductForm = ({ onClose }) => {
           <div className="flex justify-between gap-2">
 
           <Input
-            className="border border-slate-300 rounded-md"
+            className="border border-zinc-600 rounded-md"
             key="outside"
             type="text"
             placeholder="Price"
             />
           <Input
-            className="border border-slate-300 rounded-md"
+            className="border border-zinc-600 rounded-md"
             key="outside"
             type="text"
             placeholder="Discount"
@@ -58,7 +58,7 @@ const ProductForm = ({ onClose }) => {
           <Button
             color="primary"
             onPress={onClose}
-            className="bg-slate-500 rounded-md text-white"
+            className="bg-orange-500 rounded-md text-white"
           >
             Add Product
           </Button>

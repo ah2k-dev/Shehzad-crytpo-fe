@@ -9,13 +9,13 @@ const FaqForm = ({ onClose }) => {
       <form>
         <ModalBody>
           <Input
-            className="border border-slate-300 rounded-md"
+            className="border border-zinc-600 rounded-md text-white"
             key="outside"
             type="text"
             placeholder="Question"
           />
               <Textarea
-                className="border border-slate-300 rounded-md"
+                className="border border-zinc-600 rounded-md text-white"
                 key="outside"
                 type="text"
                 placeholder="Answer..."
@@ -34,7 +34,7 @@ const FaqForm = ({ onClose }) => {
           <Button
             color="primary"
             onPress={onClose}
-            className="bg-slate-500 rounded-md text-white"
+            className="bg-orange-500 rounded-md text-white"
           >
             Add Faq
           </Button>

@@ -15,14 +15,14 @@ const GeneralTable = ({ columns, rows }) => {
     <div>
       <Table
         aria-label="Example table with dynamic content"
-        className="bg-slate-100 rounded-md overflow-y-auto h-[27rem]"
+        className="bg-zinc-800 rounded-md overflow-y-auto h-[27rem]"
       >
-        <TableHeader className="bg-zinc-500">
+        <TableHeader className="bg-zinc-900">
           {columns?.map((column) => (
             <TableColumn
               key={column.key}
               className={cn(
-                "bg-zinc-500 text-white capitalize ",
+                "bg-zinc-900 text-white capitalize ",
                 // column?.key === "action" ||column?.key === "sno"
                 //   && "w-10"
                   
