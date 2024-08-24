@@ -44,6 +44,8 @@ export default {
         spiralBg: "url('/background/spiral.png')",
         faqbg : "url('/src/assets/faqbg.webp')",
         howwork : "url('/src/assets/bg-texture.jpg')",
+        productDetail : "url('/src/assets/productdetail.jpg')",
+        about : "url('/src/assets/about.jpeg')",
       },
       colors: {
         blackcurrent: {

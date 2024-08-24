@@ -10,6 +10,8 @@ import {
   Twitter,
 } from "lucide-react";
 import {
+  Accordion,
+  AccordionItem,
   Button,
   cn,
   Dropdown,
@@ -25,8 +27,6 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/react";
-import ThemeSwitch from "../common/themeSwitch";
-import CategoryList from "./categoryList";
 import { Link, useLocation } from "react-router-dom";
 import { CategoryMenu } from "../../data/categoryMenu";
 
@@ -35,17 +35,20 @@ const TopNavbar = ({ floating }) => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [menuHoveredIndex, setMenuHoveredIndex] = useState(null);
 
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location?.pathname]);
+  
+  useEffect(()=>{
+    window.scrollTo(0,0)
+      },[location.pathname])
 
   return (
    
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className=" sm:px-20 bg-transparent backdrop-blur-none backdrop-saturate-100"
+      className="scroll-box sm:px-20 bg-transparent backdrop-blur-none backdrop-saturate-100"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -64,7 +67,7 @@ const TopNavbar = ({ floating }) => {
         </NavbarItem>
 
         <NavbarItem className="border-t-2 border-transparent p-2 hover:border-orange-400/60 hover:text-slate-100/70">
-          <Link to={"/"}>About</Link>
+          <Link to={"/about"}>About</Link>
         </NavbarItem>
 
         {CategoryMenu.map((item, index) => (
@@ -156,66 +159,39 @@ const TopNavbar = ({ floating }) => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="mt-16 bg-zinc-500/50">
+      <NavbarMenu className="mt-16 bg-zinc-500/50 scroll-box">
         <NavbarMenuItem>
           <Link to={"/"}>
-            <p className="p-2 text-white z-[100px] hover:text-orange-300">
+            <p className="p-2 my-2 text-white z-[100px] hover:text-orange-300">
               Home
             </p>
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link to={"/about"}>
-            <p className="p-2 text-white z-[100px] hover:text-orange-300">
+            <p className="p-2 my-2 text-white z-[100px] hover:text-orange-300">
               About
             </p>
           </Link>
         </NavbarMenuItem>
         {CategoryMenu.map((item, index) => (
           <NavbarMenuItem key={index}>
-            <div
-              onMouseEnter={() => setMenuHoveredIndex(index)} // Set the hovered dropdown
-              onMouseLeave={() => setMenuHoveredIndex(null)} // Reset the hovered dropdown
-            >
-              <Dropdown
-                // key={i}
-                placement="left-start"
-                isOpen={menuHoveredIndex === index} // Open dropdown if it is hovered
-                onOpenChange={() => setActive(value?.label)}
-                onClose={() => setActive("")}
-                className="bg-orage-500"
-              >
-                <DropdownTrigger className="cursor-pointer z-10">
-                  <Button
-                    className={cn(
-                      " transition-all transition-3s cursor-pointer  block p-2 text-white z-[100px]",
-                      menuHoveredIndex === index && "  text-orange-300  z-10"
-                    )}
-                  >
-                    {item?.label}
-                  </Button>
-                </DropdownTrigger>
-                <DropdownMenu
-                  aria-label="Static Actions"
-                  className="bg-zinc-800 text-white shadow-lg border-t-4 border-orange-400 mt-1"
+            
+            <Accordion variant="splitted">
+              <AccordionItem
+                
+                className="text-white ms-[-14px]"
+                aria-label="Accordion 1"
+                title={ item?.label}
                 >
-                  {item?.subCategory?.map((subValue) => (
-                    <DropdownItem
-                      key={subValue}
-                      className="hover:text-orange-400 rounded-md"
-                    >
-                      <Link
-                        key={subValue}
-                        to={`/shop?${subValue}`}
-                        className="block"
-                      >
-                        {subValue}
-                      </Link>
-                    </DropdownItem>
-                  ))}
-                </DropdownMenu>
-              </Dropdown>
-            </div>
+            {item?.subCategory?.map((value , j)=>(
+              <Link key={j} className="block p-1 px-4 rounded-lg hover:text-orange-400">
+              {value}
+              </Link>
+            ))}
+              </AccordionItem>
+        
+              </Accordion>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

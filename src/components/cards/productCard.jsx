@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../hooks/useOutSideClick";
 import { ShoppingCart , Heart} from 'lucide-react';
 import { Button, cn } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
 export function ExpandableCardDemo({page}) {
   const [active, setActive] = useState(
@@ -138,7 +139,7 @@ export function ExpandableCardDemo({page}) {
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
-            onClick={() => setActive(card)}
+            // onClick={() => setActive(card)}
             className="p-4 flex flex-col    hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  ">
@@ -179,13 +180,15 @@ export function ExpandableCardDemo({page}) {
                     
               </div>
             </div>
+            <Link to={"/product"} className="block w-full">
             <motion.button
-              layoutId={`button-${card.title}-${id}`}
-              className="flex gap-3 items-center justify-center px-4 py-2 text-sm rounded-md font-bold bg-gray-100 hover:bg-zinc-600 hover:text-white text-black mt-4 md:mt-0"
+            
+              // layoutId={`button-${card.title}-${id}`}
+              className="w-full px-4 py-2 text-sm rounded-md font-bold bg-orange-500 hover:bg-orange-600 hover:text-white text-white mt-4 md:mt-0"
             >
-                <ShoppingCart />
-              Add to Cart
+              View Details
             </motion.button>
+            </Link>
           </motion.div>
         ))}
       </div>
