@@ -13,6 +13,9 @@ import ProductDetail from "../pages/landingPages/productDetail";
 import AboutUs from "../pages/landingPages/aboutUs";
 const Router = () => {
 
+  
+
+
   useEffect(() => {
     ReactGA.initialize('G-W2XTCCMZHQ'); // Replace with your GA4 Measurement ID
     ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search });

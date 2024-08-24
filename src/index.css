@@ -10,6 +10,9 @@
 header {
     max-width: 100vw !important;
 }
+.text-default-foreground{
+    color: #fff !important;
+}
 
 .swiper-button-disabled{
 

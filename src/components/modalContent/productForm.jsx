@@ -9,20 +9,20 @@ const ProductForm = ({ onClose }) => {
       <form>
         <ModalBody>
           <Input
-            className="border border-zinc-600 rounded-md"
+            className="border text-foreground-500 border-zinc-600 rounded-md"
             key="outside"
             type="text"
             placeholder="Product Name"
           />
               <Textarea
-                className="border border-zinc-600 rounded-md"
+                className="border text-foreground-500 border-zinc-600 rounded-md"
                 key="outside"
                 type="text"
                 placeholder="Description..."
                 />
                  <Select 
         placeholder="Select Category" 
-        className="border border-zinc-600 bg-transparent rounded-md w-full"
+        className="border border-zinc-600 bg-transparent text-foreground-500 rounded-md w-full"
       >
         {["abc","xyz"].map((animal , i) => (
           <SelectItem key={i} className="bg-zinc-700 w-full rounded-md hover:bg-zinc-500 text-white hover:text-white">
@@ -33,18 +33,43 @@ const ProductForm = ({ onClose }) => {
           <div className="flex justify-between gap-2">
 
           <Input
-            className="border border-zinc-600 rounded-md"
+            className="border text-foreground-500 border-zinc-600 rounded-md"
             key="outside"
             type="text"
             placeholder="Price"
             />
           <Input
-            className="border border-zinc-600 rounded-md"
+            className="border text-foreground-500 border-zinc-600 rounded-md"
             key="outside"
             type="text"
             placeholder="Discount"
             />
             </div>
+          <div className="flex justify-between gap-2">
+
+          <Input
+            className="border text-foreground-500 border-zinc-600 rounded-md"
+            key="outside"
+            type="text"
+            placeholder="SKU"
+            />
+          <Input
+            className="border text-foreground-500 border-zinc-600 rounded-md"
+            key="outside"
+            type="text"
+            placeholder="Brand"
+            />
+            </div>
+            <Select 
+        placeholder="Select Availablity" 
+        className="border border-zinc-600 text-foreground-500 bg-transparent rounded-md w-full"
+      >
+        {["In Stock","Out Of Stock"].map((animal , i) => (
+          <SelectItem key={i} className="bg-zinc-700 w-full rounded-md hover:bg-zinc-500 text-white hover:text-white">
+            {animal}
+          </SelectItem>
+        ))}
+      </Select>
         </ModalBody>
         <ModalFooter>
           <Button
