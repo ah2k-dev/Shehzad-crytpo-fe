@@ -4,6 +4,7 @@ import React from "react";
 import GeneralTable from "../../components/common/table";
 import LineChart from "../../components/charts/lineChart";
 // import { google } from "googleapis";
+// import jkh from "../../../credentials.json"
 
 
 const Dashboard = () => {
@@ -12,7 +13,7 @@ const Dashboard = () => {
 //   const analytics = google.analytics('v3');
 //   async function getReport() {
 //   const auth = new google.auth.GoogleAuth({
-//     keyFile: '../../../credential.json',
+//     keyFile: '../../../credentials.json',
 //     scopes: ['https://www.googleapis.com/auth/analytics.readonly'],
 //   });
 

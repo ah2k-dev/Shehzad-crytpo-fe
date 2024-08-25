@@ -1,25 +1,40 @@
 import { Button, Input, ModalBody, ModalFooter, Select, SelectItem, Textarea } from "@nextui-org/react";
 import React from "react";
+import { useForm } from "react-hook-form";
 
 const CategoryForm = ({ onClose }) => {
  
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
+  const onSubmit = (data) => {
+    console.log("Form data submitted:", data);
+    onClose(); // Close modal or perform any other action
+  };
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
       <ModalBody>
           <Input
-            className="border border-zinc-600 rounded-md text-foreground-500"
-            key="outside"
+           {...register("category", { required: "Category is required" })}
+           className={`border border-zinc-600 rounded-md text-foreground-500 ${errors.category ? "border-red-500" : ""}`}
+           key="outside"
             type="text"
             placeholder="Category"
           />
+          {errors.category && <p className="text-red-500">{errors.category.message}</p>}
+
               <Textarea
-                className="border border-zinc-600 rounded-md text-foreground-500"
-                key="outside"
-                type="text"
-                placeholder="Sub Category e.g(abc,xyz,...)"
-                />
+               {...register("subcategory", { required: "Sub Category is required" })}
+               className={`border border-zinc-600 rounded-md text-foreground-500 ${errors.subcategory ? "border-red-500" : ""}`}
+               key="outside"
+               type="text"
+               placeholder="Sub Category e.g(abc,xyz,...)"
+               />
+               {errors.subcategory && <p className="text-red-500">{errors.subcategory.message}</p>}
                 
         </ModalBody>
         <ModalFooter>
@@ -33,7 +48,7 @@ const CategoryForm = ({ onClose }) => {
           </Button>
           <Button
             color="primary"
-            onPress={onClose}
+              type="submit"
             className="bg-orange-500 rounded-md text-white"
           >
             Add Category

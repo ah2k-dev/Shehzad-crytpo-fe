@@ -11,6 +11,7 @@ import Category from "../pages/dashboardPages/category";
 import Faqs from "../pages/dashboardPages/faqs";
 import ProductDetail from "../pages/landingPages/productDetail";
 import AboutUs from "../pages/landingPages/aboutUs";
+import Setting from "../pages/dashboardPages/setting";
 const Router = () => {
 
   
@@ -41,6 +42,7 @@ const Router = () => {
         <Route path="/dashboard/products" element={<Products />} />
         <Route path="/dashboard/categories" element={<Category />} />
         <Route path="/dashboard/faqs" element={<Faqs />} />
+        <Route path="/dashboard/setting" element={<Setting />} />
         
       </Route>
       </Routes>

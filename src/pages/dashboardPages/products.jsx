@@ -263,7 +263,7 @@ const Products = () => {
             <Button onPress={onOpen} className='bg-orange-500 text-white rounded-md '><Plus/> <span className='hidden md:block'>Add New</span></Button>
         </div>
         <GeneralTable columns={coulumns} rows={rows} />
-        <FormModal isOpen={isOpen} onClose={onClose} title="Add Product" content={<ProductForm onClose={onClose}/>}/>
+        <FormModal isOpen={isOpen} onClose={onClose} title="Add Product" content={<ProductForm onClose={onClose}/>} type ="product"/>
     </div>
   )
 }

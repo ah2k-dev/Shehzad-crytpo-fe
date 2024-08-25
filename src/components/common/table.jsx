@@ -15,7 +15,7 @@ const GeneralTable = ({ columns, rows }) => {
     <div>
       <Table
         aria-label="Example table with dynamic content"
-        className="bg-zinc-800 rounded-md overflow-y-auto h-[27rem]"
+        className="bg-zinc-800 rounded-md overflow-y-auto "
       >
         <TableHeader className="bg-zinc-900">
           {columns?.map((column) => (

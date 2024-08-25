@@ -123,14 +123,14 @@ const TopNavbar = ({ floating }) => {
         <NavbarItem>
           <div
             className={cn(
-              " flex justify-center rounded-md w-full transition-all duration-600   ",
-              searchOpen ? "w-full " : "  md:w-0"
+              " bg-red-300 flex justify-center rounded-md w-full transition-all duration-800   ",
+              // searchOpen ? "block " : "  hidden"
             )}
           >
             <Input
               className={cn(
                 " rounded-md dark:bg-zinc-800 transition-all",
-                searchOpen ? "block " : "hidden "
+                searchOpen ? "w-full block" : "w-0 hidden"
               )}
               placeholder="Search Product..."
               type="text"
@@ -145,7 +145,7 @@ const TopNavbar = ({ floating }) => {
             />
             <div
               className={cn(
-                "bg-zinc-300 p-1 rounded-lg cursor-pointer",
+                "bg-zinc-300 p-1 rounded-lg cursor-pointer ",
                 searchOpen ? "hidden " : "block "
               )}
               onClick={() => setSearchOpen(true)}
@@ -153,8 +153,8 @@ const TopNavbar = ({ floating }) => {
               <Search
                 onClick={() => setSearchOpen(true)}
                 className="cursor-pointer bg-zinc-300 rounded-md p-1 text-zinc-800 text-xl text-default-400 pointer-events-none flex-shrink-0"
-              />
-            </div>
+                />
+                </div>
           </div>
         </NavbarItem>
       </NavbarContent>

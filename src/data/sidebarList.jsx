@@ -21,9 +21,9 @@ export const SidebarList = [
     link: "/dashboard/faqs",
     icon: <CircleHelp   />,
   },
-  // {
-  //   name: "Setting",
-  //   link: "/dashboard/setting",
-  //   icon: <Settings    />,
-  // },
+  {
+    name: "Setting",
+    link: "/dashboard/setting",
+    icon: <Settings    />,
+  },
 ];

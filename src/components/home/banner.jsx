@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {  Pagination, EffectFade, Autoplay } from "swiper/modules";
 import banner1 from "../../assets/banner1.webp";
 import banner2 from "../../assets/banner2.webp";
-import banner3 from "../../assets/banner3.webp"; // import Slider from 'react-slick/lib/slider';
+import banner3 from "../../assets/banner3.webp"; 
 
 const Banner = () => {
   return (
