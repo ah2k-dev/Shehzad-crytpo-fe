@@ -67,7 +67,7 @@ const TopNavbar = ({ floating }) => {
         </NavbarItem>
 
         <NavbarItem className="border-t-2 border-transparent p-2 hover:border-orange-400/60 hover:text-slate-100/70">
-          <Link to={"/about"}>About</Link>
+          <Link to={"/"}>About</Link>
         </NavbarItem>
 
         {CategoryMenu.map((item, index) => (

@@ -7,7 +7,8 @@ const Logo = ({className}) => {
   return (
     <div className="text-orange-400 capitalize font-Baskervville">
       <Link to={"/"}>
-      <img src={logo} className={cn("w-20",className)} />
+      {/* <img src={logo} className={cn("w-20",className)} /> */}
+      LOGO
       </Link>
     </div>
   );

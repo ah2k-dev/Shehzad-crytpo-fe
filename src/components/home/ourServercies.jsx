@@ -48,34 +48,36 @@ const OusrServices = () => {
       {isDesktopOrLaptop && (
         <div className="timeline">
           <SectionR
-            text1={"Founded Flight Corporation"}
+            text1={"Lorem ipsum dolor"}
             text2={
-              "LEO Flight wins NASA HeroX award for innovation and develops its DARPA-backed electric-jet propulsion system."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam"
             }
             image={image1}
             imageDim={[200, "300px"]}
             lineHeight={"320px"}
           />
           <SectionL
-            text1={"LEO Coupe Design Validated"}
+            text1={"Lorem ipsum dolor"}
             text2={
-              "LEO Flight develops and validates the LEO Coupe's aerodynamic design, builds the LX-1 demo aircraft."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam"
             }
             image={image2}
             imageDim={[200, "300px"]}
             lineHeight={"320px"}
           />
           <SectionR
-            text1={"Subscale Flight Testing"}
-            text2={"Subscale flight testing on ArcSpear Jet Drone platform."}
+            text1={"Lorem ipsum dolor"}
+            text2={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam"
+            }
             image={image3}
             imageDim={[200, "300px"]}
             lineHeight={"320px"}
           />
           <SectionL
-            text1={"Testing & Development"}
+            text1={"Lorem ipsum dolor"}
             text2={
-              "LX-1 demo aircraft flight testing/LEO Coupe demo aircraft development."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam"
             }
             image={image4}
             imageDim={[200, "300px"]}
@@ -87,40 +89,41 @@ const OusrServices = () => {
         <div className="timeline">
           <MobileSection
             year={2021}
-            text1={"Founded Flight Corporation"}
+            text1={"Lorem ipsum dolor"}
             text2={
-              "LEO Flight wins NASA HeroX award for innovation and develops its DARPA-backed electric-jet propulsion system."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam"
             }
             image={image1}
             imageDim={[200, 200]}
             lineHeight={"340px"}
           />
           <MobileSection
-            text1={"LEO Coupe Design Validated"}
+            text1={"Lorem ipsum dolor"}
             text2={
-              "LEO Flight develops and validates the LEO Coupe's aerodynamic design, builds the LX-1 demo aircraft."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam"
             }
             image={image2}
             imageDim={[200, 250]}
             lineHeight={"340px"}
           />
           <MobileSection
-            text1={"Subscale Flight Testing"}
-            text2={"Subscale flight testing on ArcSpear Jet Drone platform."}
+            text1={"Lorem ipsum dolor"}
+            text2={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam"
+            }
             image={image3}
             imageDim={[470, 250]}
             lineHeight={"400px"}
           />
           <MobileSection
-            text1={"Testing & Development"}
+            text1={"Lorem ipsum dolor"}
             text2={
-              "LX-1 demo aircraft flight testing/LEO Coupe demo aircraft development."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam"
             }
             image={image4}
             imageDim={[200, 250]}
             lineHeight={"285px"}
           />
-          
         </div>
       )}
     </div>
@@ -240,7 +243,7 @@ const SectionR = ({ text1, text2, image, imageDim, lineHeight }) => {
         <span
           style={{
             marginLeft: "1.5rem",
-            
+
             width: "60%",
             fontSize: "1.2rem",
             opacity: isInView ? 1 : 0,
@@ -284,7 +287,7 @@ const SectionL = ({ text1, text2, image, imageDim, lineHeight }) => {
             opacity: isInView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
-           className="text-orange-500 font-Baskervville"
+          className="text-orange-500 font-Baskervville"
         >
           {text1}
         </span>
@@ -400,7 +403,6 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
   console.log(isInView);
   return (
     <div className="section" ref={ref}>
-      
       <div>
         {isInView && (
           <div>
@@ -450,7 +452,7 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
             opacity: isInView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
-         className="text-orange-500 font-Baskervville"
+          className="text-orange-500 font-Baskervville"
         >
           {text1}
         </span>
@@ -486,7 +488,7 @@ const MobileSection = ({ text1, text2, image, imageDim, lineHeight }) => {
         <span
           style={{
             marginLeft: "1rem",
-            
+
             width: "95%",
             fontSize: "0.8rem",
             opacity: isInView ? 1 : 0,

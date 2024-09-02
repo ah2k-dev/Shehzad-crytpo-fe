@@ -17,13 +17,11 @@ const HowItWork = () => {
           </div>
           <div className="p-5">
             <p className="my-2 font-Baskervville text-2xl text-center font-semibold">
-              Visit The Site
+              Lorem ipsum dolor
             </p>
             <p className="text-center text-slate-500 ">
-              Explore the latest trends and discover featured products that suit
-              your style and needs. Whether you're looking for the newest
-              arrivals or the most sought-after items, you'll find everything at
-              reasonable prices.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              doeiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
@@ -37,14 +35,11 @@ const HowItWork = () => {
           </div>
           <div className="p-5">
             <p className="my-2 font-Baskervville text-2xl text-center font-semibold">
-              Choose Your Product
+              Lorem ipsum dolor
             </p>
             <p className="text-center text-slate-500 ">
-              Search through our extensive collection of products and easily
-              find exactly what you're looking for. You can explore a wide range
-              of options, from the latest trends to timeless classics. Dive into
-              the details—learn about the product's features, and customer
-              reviews to make an informed decision.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              doeiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
@@ -58,13 +53,11 @@ const HowItWork = () => {
           </div>
           <div className="p-5">
             <p className="my-2 font-Baskervville text-2xl text-center font-semibold">
-              Recieve Your Parcel
+              Lorem ipsum dolor
             </p>
             <p className="text-center text-slate-500 ">
-              Place your order with ease and enjoy the convenience of having
-              your products delivered right to your doorstep.Shop comfortably
-              from home and experience the hassle-free way to get the products
-              you love.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              doeiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
